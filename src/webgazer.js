@@ -280,7 +280,7 @@
     /**
      * Runs every available animation frame if webgazer is not paused
      */
-    var smoothingVals = new webgazer.util.DataWindow(4);
+    var smoothingVals = new webgazer.util.DataWindow(10);
     var k = 0;
 
     function loop() {

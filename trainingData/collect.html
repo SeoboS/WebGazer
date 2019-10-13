@@ -36,7 +36,7 @@
 	
 	</head>
 	<body>
-		<script src="../build/gazer.js"></script>
+		<script src="../build/webgazer.js"></script>
 		<div id="content">
 			<h2>Facetracking example</h2>
 			<div id="container">
@@ -71,8 +71,7 @@
 							videoSelector = "video";
 						}
 					};
-				
-					navigator.getUserMedia(videoSelector, function( stream ) {
+					navigator.mediaDevices.getUserMedia(videoSelector, function( stream ) {
 						if (vid.mozCaptureStream) {
 							vid.mozSrcObject = stream;
 						} else {

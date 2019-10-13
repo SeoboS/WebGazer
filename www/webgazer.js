@@ -11020,6 +11020,17 @@ function store_points(x, y, k) {
         navigator.mediaDevices.getUserMedia( webgazer.params.camConstraints )
         .then(function(stream){ // set the stream
           videoStream = stream;
+          //const track = videoStream.getVideoTracks();
+          //console.log(track)
+          //const capabilities = track.getCapabilities();
+          //const settings = track[0].getSettings();
+          // console.log("min: " + capabilities.zoom.min);
+          // console.log("max: " + capabilities.zoom.max);
+          // console.log("step: " + capabilities.zoom.step);
+          //console.log("settings: " + JSON.stringify(settings));
+          //console.log("value: " + settings.zoom);
+          //track.applyConstraints({advanced: [ {zoom: event.target.value} ]});
+
           init(videoStream);
         })
         .catch(function(err) { // error handling

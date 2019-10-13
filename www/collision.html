@@ -24,7 +24,7 @@
     .showPredictionPoints(false); /* shows a square every 100 milliseconds where current prediction is */
 
     function checkIfReady() {
-      var feedbackBox = document.getElementById( webgazer.params.faceFeedbackBoxId );
+      var feedbackBox = document.getElementById(webgazer.params.faceFeedbackBoxId );
       
       if (!webgazer.isReady()) {
         setTimeout(checkIfReady, 100);
